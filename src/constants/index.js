@@ -27,15 +27,25 @@ import {
   image9,
 } from '../assets/images'
 export const navLinks = [
+  // {
+  //   id: 'home',
+  //   pathTo: '/',
+  //   title: 'Home',
+  // },
   {
-    id: 'home',
-    pathTo: '/',
-    title: 'Home',
+    id: 'clients',
+    pathTo: 'clients',
+    title: 'ABOUT',
+    dropdown: [
+      { title: 'About Us', path: '/aboutUs' },
+      { title: 'Our Team', path: '/ourTeam' },
+      { title: 'Testimonials', path: '/testimonials' },
+    ], // Dropdown options
   },
   {
     id: 'features',
     pathTo: 'features',
-    title: 'Services',
+    title: 'OUR BUSINESS',
     dropdown: [
       { title: 'Interior Design', path: '/InteriorProjects', img: image1 },
       {
@@ -54,24 +64,18 @@ export const navLinks = [
         img: image4,
       },
       { title: 'Real Estate', path: '/realEstate', img: image5 },
-      
     ], // Dropdown options
   },
   {
     id: 'OurWork',
     pathTo: 'OurWork',
-    title: 'Our Work',
+    title: 'WHY CHOOSE US ?',
   },
-  {
-    id: 'clients',
-    pathTo: 'clients',
-    title: 'About Us',
-    dropdown: [
-      { title: 'About Us', path: '/aboutUs' },
-      { title: 'Our Team', path: '/ourTeam' },
-      { title: 'Testimonials', path: '/testimonials' },
-    ], // Dropdown options
-  },
+{
+    id: 'projects',
+    pathTo: 'projects',
+    title: 'PROJECTS',
+},
   {
     id: 'contactUs',
     pathTo: 'clients',

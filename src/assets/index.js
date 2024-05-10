@@ -29,6 +29,7 @@ import Bill1 from './Bill1.png'
 import Pratik from './Pratik.png'
 import Visal from './Visal.png'
 import PageNotFound from './PageNotFound.gif'
+// import Avp-bg-video from './Avp-bg-video.mp4'
 
 export {
   airbnb,
@@ -62,4 +63,5 @@ export {
   Pratik,
   Visal,
   PageNotFound,
+  // Avp-bg-video
 }

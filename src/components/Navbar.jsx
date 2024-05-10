@@ -9,12 +9,12 @@ const Navbar = () => {
   const location = useLocation()
   const isHomePage = location.pathname === '/'
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <nav className="w-full flex py-6 justify-between items-center navbar z-50 ">
       <a href="/">
-        <img src={Logo_B} alt="AVP Logo" className="w-[100px] h-[60px]" />
+        <img src={Logo_B} alt="AVP Logo" className="w-[120px] h-[80px] mr-20 " />
       </a>
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <ul className="list-none sm:flex hidden justify-start items-center flex-1 ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -31,7 +31,7 @@ const Navbar = () => {
 
             {/* Dropdown menu */}
             {dropdownOpen === nav.id && nav.dropdown && (
-              <div className="block absolute bg-gray-100 min-w-[160px] shadow-md z-10 bg-black-gradient   mx-4  rounded-xl sidebar">
+              <div className="block absolute bg-gray-100 min-w-[160px] shadow-md  bg-black-gradient   mx-4  rounded-xl sidebar z-50">
                 {nav.dropdown.map((item, index) => (
                   <a
                     key={index}
@@ -80,7 +80,7 @@ const Navbar = () => {
 
                 {/* Dropdown menu */}
                 {dropdownOpen === nav.id && nav.dropdown && (
-                  <div className="block absolute bg-gray-100 min-w-[160px] shadow-md z-10">
+                  <div className="block absolute bg-gray-100 min-w-[160px] shadow-md z-20">
                     {nav.dropdown.map((item, index) => (
                       <a
                         key={index}

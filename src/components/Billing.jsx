@@ -1,6 +1,7 @@
 import styles, { layout } from '../style'
 import { servicesSection } from '../constants'
 import FeedbackCard from './FeedbackCard'
+import { useState } from 'react'
 
 const Servicesofferd = () => {
   return (
@@ -19,15 +20,38 @@ const Servicesofferd = () => {
     </section>
   )
 }
-
+const Projects = () => {
+  const [selectedService, setSelectedService] = useState(servicesSection[0])
+  return (
+    <div
+      className={`flex  justify-between flex-wrap sm:mb-20 mb-6 text-white`}
+    >
+      <div className=" max-w-[370px] md:mr-10 sm:mr-5 mr-5 my-5 feedback-card">
+        <img
+          key={selectedService.id}
+          src={selectedService.img}
+          className=" object-cover "
+        />
+      </div>
+      <div className="  flex flex-col justify-around  ">
+        {servicesSection.map((service) => (
+          <h2 key={service.id} onMouseEnter={() => setSelectedService(service)}>
+            {service.title}
+          </h2>
+        ))}
+      </div>
+    </div>
+  )
+}
 const Billing = () => (
   <section id="OurWork" className={layout.sectionReverse}>
     <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
     <div
       id="features"
-      className="flex flex-wrap sm:justify-center justify-center w-full feedback-container relative z-[1]"
+      className="flex flex-wrap sm:justify-center justify-center w-full  relative z-[1]"
     >
-      <Servicesofferd />
+      {/* <Servicesofferd /> */}
+      <Projects />
       {/* <div className={layout.sectionImgReverse}>
       <img src={Bill1} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />

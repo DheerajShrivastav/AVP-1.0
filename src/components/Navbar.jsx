@@ -57,6 +57,9 @@ const Navbar = () => {
             )}
           </li>
         ))}
+        <li className="font-poppins font-normal cursor-pointer text-[16px] text-black ml-auto mr-10 px-4 py-2  bg-white bg-opacity-30 rounded hover:bg-white">
+          <a href="/contactUs">CONTACT US</a>
+        </li>
       </ul>
 
       <div className={`sm:hidden flex flex-1 justify-end items-center`}>
@@ -73,40 +76,41 @@ const Navbar = () => {
           } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] rounded-xl sidebar blur-9`}
         >
           <ul className="list-none flex flex-col justify-end items-start flex-1">
-            {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
-                } text-white`}
-                onMouseEnter={() => setDropdownOpen(nav.id)}
-                onMouseLeave={() => setDropdownOpen(null)}
-              >
-                {isHomePage ? (
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                ) : (
-                  <a href={`/#${nav.pathTo}`}>{nav.title}</a>
-                )}
+            {navLinks.map(
+              (nav, index) => (
+                <li
+                  key={nav.id}
+                  className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                    index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
+                  } text-white`}
+                  onMouseEnter={() => setDropdownOpen(nav.id)}
+                  onMouseLeave={() => setDropdownOpen(null)}
+                >
+                  {isHomePage ? (
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  ) : (
+                    <a href={`/#${nav.pathTo}`}>{nav.title}</a>
+                  )}
 
-                {/* Dropdown menu */}
-                {dropdownOpen === nav.id && nav.dropdown && (
-                  <div className="block absolute bg-gray-100 min-w-[160px] shadow-md z-20">
-                    {nav.dropdown.map((item, index) => (
-                      <a
-                        key={index}
-                        href={`${item.path}`}
-                        className="block text-black no-underline px-4 py-3"
-                      >
-                        {item.title}
-                      </a>
-                    ))}
-                  </div>
-                )}
+                  {/* Dropdown menu */}
+                  {dropdownOpen === nav.id && nav.dropdown && (
+                    <div className="block absolute bg-gray-100 min-w-[160px] shadow-md z-20">
+                      {nav.dropdown.map((item, index) => (
+                        <a
+                          key={index}
+                          href={`${item.path}`}
+                          className="block text-black no-underline px-4 py-3"
+                        >
+                          {item.title}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </li>
+              ),
+              <li className="font-poppins font-normal cursor-pointer text-[16px] text-black">
+                <p>CONTACT US</p>
               </li>
-            ),
-            <li className="font-poppins font-normal cursor-pointer text-[16px] text-black">
-              <p>CONTACT US</p>
-            </li>
             )}
           </ul>
         </div>

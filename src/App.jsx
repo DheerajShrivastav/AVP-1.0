@@ -31,7 +31,7 @@ const HomePage = () => {
   })
   return (
     <>
-      <div className={` bg-primary ${styles.flexStart} z-2`}>
+      <div className={` bg-primary ${styles.flexStart} -z-20`}>
         <div className={`${stlyes.boxWidth}`}>
           <Hero />
         </div>
@@ -62,10 +62,10 @@ const HomePage = () => {
 }
 const App = () => (
   <Router>
-    <div className="bg-primary w-full overflow-hidden z-20">
+    <div className=" w-full overflow-hidden z-50">
       <div className={`${stlyes.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <Navbar />
+          {/* <Navbar /> */}
         </div>
       </div>
 

@@ -9,17 +9,25 @@ const Navbar = () => {
   const location = useLocation()
   const isHomePage = location.pathname === '/'
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar z-50 ">
+    <nav
+      className="w-full flex py-6 justify-between items-center bg-transparent  z-50 "
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+    >
       <a href="/">
-        <img src={Logo_B} alt="AVP Logo" className="w-[120px] h-[80px] mr-20 " />
+        <img
+          src={Logo_B}
+          alt="AVP Logo"
+          className="w-[120px] h-[80px] mr-20 "
+        />
       </a>
 
       <ul className="list-none sm:flex hidden justify-start items-center flex-1 ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
-              } text-white`}
+            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+              index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
+            } text-white`}
             onMouseEnter={() => setDropdownOpen(nav.id)}
             onMouseLeave={() => setDropdownOpen(null)}
           >
@@ -40,7 +48,7 @@ const Navbar = () => {
                     // adding css
 
                    font-poppins font-normal cursor-pointer text-[16px]"text-white  `}
-                  // onClick={() => setActive(nav.title)}
+                    // onClick={() => setActive(nav.title)}
                   >
                     {item.title}
                   </a>
@@ -60,15 +68,17 @@ const Navbar = () => {
         />
 
         <div
-          className={`${toggle ? 'flex' : 'hidden'
-            } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] rounded-xl sidebar blur-9`}
+          className={`${
+            toggle ? 'flex' : 'hidden'
+          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] rounded-xl sidebar blur-9`}
         >
           <ul className="list-none flex flex-col justify-end items-start flex-1">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
-                  } text-white`}
+                className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                  index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
+                } text-white`}
                 onMouseEnter={() => setDropdownOpen(nav.id)}
                 onMouseLeave={() => setDropdownOpen(null)}
               >
@@ -93,7 +103,11 @@ const Navbar = () => {
                   </div>
                 )}
               </li>
-            ))}
+            ),
+            <li className="font-poppins font-normal cursor-pointer text-[16px] text-black">
+              <p>CONTACT US</p>
+            </li>
+            )}
           </ul>
         </div>
       </div>

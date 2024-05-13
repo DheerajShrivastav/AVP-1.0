@@ -76,11 +76,11 @@ export const navLinks = [
     pathTo: 'projects',
     title: 'PROJECTS',
 },
-  {
-    id: 'contactUs',
-    pathTo: 'clients',
-    title: 'Contact Us',
-  },
+  // {
+  //   id: 'contactUs',
+  //   pathTo: 'clients',
+  //   title: 'Contact Us',
+  // },
 ]
 
 export const features = [
@@ -329,28 +329,38 @@ export const engineeringWorks = [
 export const servicesSection = [
   {
     id: 'service01',
-    title: 'Interior Design',
+    title: 'INDUSTRIAL PROJECTS',
     path: '/InteriorProjects',
     img: image1,
   },
   {
     id: 'service02',
-    title: 'Building Construction and Management',
+    title: 'INTERIOR DESIGN SPACE',
     path: '/constructionManagement',
     img: image2,
   },
   {
     id: 'service03',
-    title: 'Engineering Works',
+    title: 'ENGINEERING WORKS',
     path: '/engineeringWorks',
     img: image3,
   },
   {
     id: 'service04',
-    title: 'Architecture work',
+    title: 'ARCHITECTURE WORK',
     path: '/architectureWork',
     img: image4,
   },
-  { id: 'service05', title: 'Real Estate', path: '/AVP/realEstate', img: image5 },
-  
+  {
+    id: 'service05',
+    title: 'EPOXY FLOORING & PAINTS',
+    path: '/architectureWork',
+    img: image4,
+  },
+  {
+    id: 'service06',
+    title: 'REAL ESTATE',
+    path: '/AVP/realEstate',
+    img: image5,
+  },
 ]

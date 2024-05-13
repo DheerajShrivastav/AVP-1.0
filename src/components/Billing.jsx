@@ -23,19 +23,21 @@ const Servicesofferd = () => {
 const Projects = () => {
   const [selectedService, setSelectedService] = useState(servicesSection[0])
   return (
-    <div
-      className={`flex  justify-between flex-wrap sm:mb-20 mb-6 text-white`}
-    >
-      <div className=" max-w-[370px] md:mr-10 sm:mr-5 mr-5 my-5 feedback-card">
+    <div className={`flex  justify-between flex-wrap sm:mb-20 mb-6 text-white`}>
+      <div className=" h-[60%] md:h-[400px] sm:h-[300px] max-w-[670px] md:max-w-[570px] sm:max-w-[470px] md:mr-10 sm:mr-5 mr-5 my-5 feedback-card">
         <img
           key={selectedService.id}
           src={selectedService.img}
-          className=" object-cover "
+          className=" h-full w-full object-cover "
         />
       </div>
       <div className="  flex flex-col justify-around  ">
         {servicesSection.map((service) => (
-          <h2 key={service.id} onMouseEnter={() => setSelectedService(service)}>
+          <h2
+            key={service.id}
+            onMouseEnter={() => setSelectedService(service)}
+            className="feedback-card"
+          >
             {service.title}
           </h2>
         ))}

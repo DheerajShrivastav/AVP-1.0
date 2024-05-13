@@ -39,7 +39,10 @@ const Navbar = () => {
 
             {/* Dropdown menu */}
             {dropdownOpen === nav.id && nav.dropdown && (
-              <div className="block absolute bg-gray-100 min-w-[160px] shadow-md  bg-black-gradient   mx-4  rounded-xl sidebar z-50">
+              <div
+                className="block absolute  min-w-[160px] shadow-md   mx-4  rounded-xl sidebar z-50"
+                style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+              >
                 {nav.dropdown.map((item, index) => (
                   <a
                     key={index}
@@ -73,7 +76,8 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? 'flex' : 'hidden'
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] rounded-xl sidebar blur-9`}
+          } p-6  absolute top-20 right-0 mx-4 my-2 min-w[140px] rounded-xl sidebar blur-9`}
+          style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         >
           <ul className="list-none flex flex-col justify-end items-start flex-1">
             {navLinks.map(
@@ -108,7 +112,10 @@ const Navbar = () => {
                   )}
                 </li>
               ),
-              <li className="font-poppins font-normal cursor-pointer text-[16px] text-black">
+              <li
+                className="font-poppins font-normal cursor-pointer text-[16px] text-black"
+                style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+              >
                 <p>CONTACT US</p>
               </li>
             )}

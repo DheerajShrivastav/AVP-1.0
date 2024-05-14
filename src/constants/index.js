@@ -47,23 +47,32 @@ export const navLinks = [
     pathTo: 'features',
     title: 'OUR BUSINESS',
     dropdown: [
-      { title: 'Interior Design', path: '/InteriorProjects', img: image1 },
       {
-        title: 'Building Construction and Management',
+        title: 'INTERIOR DESIGN SPACE',
+        path: '/InteriorProjects',
+        img: image1,
+      },
+      {
+        title: 'INDUSTRIAL PROJECTS',
         path: '/constructionManagement',
         img: image2,
       },
       {
-        title: 'Engineering Works',
+        title: 'ENGINEERING WORKS',
         path: '/engineeringWorks',
         img: image3,
       },
       {
-        title: 'Architecture work',
+        title: 'ARCHITECTURE WORK',
         path: '/architectureWork',
         img: image4,
       },
-      { title: 'Real Estate', path: '/realEstate', img: image5 },
+      {
+        title: 'EPOXY FLOORING & PAINTS',
+        path: '/architectureWork',
+        img: image4,
+      },
+      { title: 'REAL ESTATE', path: '/realEstate', img: image5 },
     ], // Dropdown options
   },
   {
@@ -71,11 +80,11 @@ export const navLinks = [
     pathTo: 'OurWork',
     title: 'WHY CHOOSE US ?',
   },
-{
+  {
     id: 'projects',
     pathTo: 'projects',
     title: 'PROJECTS',
-},
+  },
   // {
   //   id: 'contactUs',
   //   pathTo: 'clients',

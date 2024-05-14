@@ -63,9 +63,9 @@ const HomePage = () => {
 const App = () => (
   <Router>
     <div className=" w-full overflow-hidden z-50">
-      <div className={`${stlyes.paddingX} ${styles.flexCenter}`}>
+      <div className={`${stlyes.paddingX} ${styles.flexCenter} fixed top-0 w-full `}>
         <div className={`${styles.boxWidth}`}>
-          {/* <Navbar /> */}
+          <Navbar />
         </div>
       </div>
 

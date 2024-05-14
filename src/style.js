@@ -20,7 +20,7 @@ export const styles = {
     'font-poppins font-medium xs:text-[20px] text-[20px] text-white xs:leading-[50px] leading-[50.8px] xs:pl-8 pl-2  h-[60px] sm:w-[350px] w-[300px] sm:h-[50px] h-[50px]',
 
   serviceParagraphSub:
-    'font-poppins font-normal text-dimblack text-[18px] leading-[30.8px] xs:pl-8 pl-2',
+    'font-poppins font-normal text-black text-[18px] leading-[30.8px] xs:pl-8 pl-2',
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-center items-start',
   flexButton: 'flex justify-center items-buttom',

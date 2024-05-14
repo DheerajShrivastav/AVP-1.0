@@ -8,24 +8,25 @@ const EngineeringWorksProjects = () => {
         id="clients"
         className={` ${styles.flexCenter} flex flex-col relative ss:pl-10  pl-5 ss:pb-20 pr-5`}
       >
-        <div className="flex-1 font-poppins bg-black-gradient-2 w-full font-bold ss:text-[50px] text-[40px] text-white ss:leading-[80.8px] leading-[75px]  items-center text-center rounded-full">
-          <h1 className="text-gradient ">Engineering Works</h1>
+        <div className="flex-1 font-poppins bg-black/50 m-0  w-full font-bold ss:text-[50px] text-[40px] text-black ss:leading-[80.8px] leading-[75px]  items-center text-center fixed top-36">
+          <h1 className="text-white ">Engineering Works</h1>
         </div>
 
-        <div className="text-white flex-grow px-24 py-8 justify-center">
-          <p className={`${styles.paragraph}  mt-5`}>
+        <div className="text-white flex-grow px-24 py-8 justify-center pt-52">
+          <p className={`${styles.serviceParagraph}  mt-5`}>
             AVP Engineers Group is a leading provider of innovative civil
             engineering solutions, dedicated to shaping the built environment
             with precision and expertise. With a legacy of excellence and a
             commitment to pushing boundaries, we offer a comprehensive suite of
             services tailored to meet the evolving needs of our clients.
           </p>
-          <h2 className={`${styles.heading} `}>Our services include:</h2> <br />
+          <h2 className={`${styles.serviceHeading} `}>Our services include:</h2>{' '}
+          <br />
           <div>
-            <h3 className={`${styles.headingSM}  bg-heading `}>
+            <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
               1. Infrastructure Design and Development:
             </h3>
-            <p className={`${styles.paragraphSub}  mt-2`}>
+            <p className={`${styles.serviceParagraphSub}  mt-2`}>
               From roads and highways to bridges and tunnels, our team of
               skilled civil engineers excels in designing resilient and
               sustainable infrastructure solutions. Utilizing state-of-the-art
@@ -35,10 +36,10 @@ const EngineeringWorksProjects = () => {
             </p>
           </div>
           <div className="mt-3">
-            <h3 className={`${styles.headingSM}  bg-heading `}>
+            <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
               2. Site Development:
             </h3>
-            <p className={`${styles.paragraphSub}  mt-2`}>
+            <p className={`${styles.serviceParagraphSub}  mt-2`}>
               Whether you're planning a residential subdivision, a commercial
               complex, or an industrial facility, our site development services
               provide the foundation for success. We specialize in site grading,
@@ -48,10 +49,10 @@ const EngineeringWorksProjects = () => {
             </p>
           </div>
           <div className="mt-3">
-            <h3 className={`${styles.headingSM}  bg-heading `}>
+            <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
               3. Structural Engineering
             </h3>
-            <p className={`${styles.paragraphSub}  mt-2`}>
+            <p className={`${styles.serviceParagraphSub}  mt-2`}>
               Our structural engineering expertise encompasses a wide range of
               structures, from high-rise buildings to specialty structures. With
               a focus on innovation and efficiency, we employ advanced analysis
@@ -61,10 +62,10 @@ const EngineeringWorksProjects = () => {
             </p>
           </div>
           <div className="mt-3">
-            <h3 className={`${styles.headingSM}  bg-heading `}>
+            <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
               4. Geotechnical Engineering:
             </h3>
-            <p className={`${styles.paragraphSub}  mt-2`}>
+            <p className={`${styles.serviceParagraphSub}  mt-2`}>
               Understanding the complex interaction between soil, rock, and
               structures is crucial in ensuring the stability and performance of
               civil engineering projects. Our geotechnical engineering services
@@ -74,10 +75,10 @@ const EngineeringWorksProjects = () => {
             </p>
           </div>
           <div className="mt-3">
-            <h3 className={`${styles.headingSM}  bg-heading `}>
+            <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
               5. Construction Management:
             </h3>
-            <p className={`${styles.paragraphSub}  mt-2`}>
+            <p className={`${styles.serviceParagraphSub}  mt-2`}>
               :** At AVP Engineers Group, we recognize the importance of
               seamless project execution in delivering successful outcomes. Our
               construction management team works closely with clients and
@@ -88,10 +89,10 @@ const EngineeringWorksProjects = () => {
             </p>
           </div>
           <div className="mt-3">
-            <h3 className={`${styles.headingSM}  bg-heading `}>
+            <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
               6. Environmental Engineering:
             </h3>
-            <p className={`${styles.paragraphSub}  mt-2`}>
+            <p className={`${styles.serviceParagraphSub}  mt-2`}>
               Sustainability and environmental stewardship are central to our
               approach to civil engineering. Our environmental engineering
               services encompass environmental impact assessments, remediation
@@ -100,7 +101,7 @@ const EngineeringWorksProjects = () => {
               and achieve regulatory compliance.
             </p>
           </div>
-          <div className={`${styles.paragraph}  mt-2`}>
+          <div className={`${styles.serviceParagraph}  mt-2`}>
             From concept to completion, AVP Engineers Group is your trusted
             partner in realizing your civil engineering vision. Contact us today
             to learn more about how we can collaborate to bring your projects to
@@ -119,8 +120,6 @@ const EngineeringWorksProjects = () => {
         </div>
       </section>
     </div>
-
-    
   )
 }
 

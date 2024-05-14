@@ -5,13 +5,13 @@ const InteriorProjects = () => {
   return (
     <section
       id="clients"
-      className={` ${styles.flexCenter} flex flex-col relative ss:pl-0  pl-0 ss:pb-20 pr-0`}
+      className={` ${styles.flexCenter} flex flex-col relative ss:pl-0  pl-0 ss:pb-20 pr-0 `}
     >
-      <div className="flex-1 font-poppins bg-black/50 m-0  w-full font-bold ss:text-[50px] text-[40px] text-black ss:leading-[80.8px] leading-[75px]  items-center text-center fixed top-0 ">
+      <div className="flex-1 font-poppins bg-black/50 m-0  w-full font-bold ss:text-[50px] text-[40px] text-black ss:leading-[80.8px] leading-[75px]  items-center text-center fixed top-36 ">
         <h1 className="text-white ">Interior Design</h1>
       </div>
 
-      <div className="text-black flex-grow px-24 py-8 justify-center pt-20">
+      <div className="text-black flex-grow px-24 py-8 justify-center pt-52 ">
         <p className={`${styles.serviceParagraph}  mt-5`}>
           At AVP Engineers Group, we specialize in transforming interior spaces
           into captivating and functional environments that exceed expectations.
@@ -23,9 +23,10 @@ const InteriorProjects = () => {
           residential space or enhance your commercial property, we have the
           knowledge and experience to handle projects of any scale.
         </p>
-        <h2 className={`${styles.heading} `}>Our services include:</h2> <br />
+        <h2 className={`${styles.serviceHeading} `}>Our services include:</h2>{' '}
+        <br />
         <div>
-          <h3 className={`${styles.headingSM}  bg-heading `}>
+          <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
             1. Concept Development:
           </h3>
           <p className={`${styles.serviceParagraphSub} text-black mt-2`}>
@@ -35,7 +36,7 @@ const InteriorProjects = () => {
           </p>
         </div>
         <div className="mt-3">
-          <h3 className={`${styles.headingSM}  bg-heading `}>
+          <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
             2. Space Planning:
           </h3>
           <p className={`${styles.serviceParagraphSub}  mt-2`}>
@@ -45,7 +46,7 @@ const InteriorProjects = () => {
           </p>
         </div>
         <div className="mt-3">
-          <h3 className={`${styles.headingSM}  bg-heading `}>
+          <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
             3. Interior Design:
           </h3>
           <p className={`${styles.serviceParagraphSub}  mt-2`}>
@@ -55,7 +56,7 @@ const InteriorProjects = () => {
           </p>
         </div>
         <div className="mt-3">
-          <h3 className={`${styles.headingSM}  bg-heading `}>
+          <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
             4. Lighting Design:
           </h3>
           <p className={`${styles.serviceParagraphSub}  mt-2`}>
@@ -65,7 +66,7 @@ const InteriorProjects = () => {
           </p>
         </div>
         <div className="mt-3">
-          <h3 className={`${styles.headingSM}  bg-heading `}>
+          <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
             5. Custom Solutions:
           </h3>
           <p className={`${styles.serviceParagraphSub}  mt-2`}>
@@ -75,7 +76,7 @@ const InteriorProjects = () => {
           </p>
         </div>
         <div className="mt-3">
-          <h3 className={`${styles.headingSM}  bg-heading `}>
+          <h3 className={`${styles.serviceHeadingSM}  bg-heading `}>
             6. Project Management:
           </h3>
           <p className={`${styles.serviceParagraphSub}  mt-2`}>

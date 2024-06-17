@@ -37,9 +37,9 @@ export const navLinks = [
     pathTo: 'clients',
     title: 'ABOUT',
     dropdown: [
-      { title: 'About Us', path: '/aboutUs' },
-      { title: 'Our Team', path: '/ourTeam' },
-      { title: 'Testimonials', path: '/testimonials' },
+      { title: 'About Us', path: '#clients' },
+      { title: 'Our Team', path: '#clients' },
+      { title: 'Testimonials', path: '#features' },
     ], // Dropdown options
   },
   {
@@ -161,7 +161,7 @@ export const stats = [
     title: 'Complete Projetcs',
     value: '100+',
   },
-  
+
   {
     id: 'stats-3',
     title: 'Land Work',
@@ -371,5 +371,22 @@ export const servicesSection = [
     title: 'REAL ESTATE',
     path: '/AVP/realEstate',
     img: image5,
+  },
+]
+export const ArchitectureWorkConstant = [
+  {
+    id: 'project-1',
+    title: 'Furniture Design',
+    img: image7,
+  },
+  {
+    id: 'project-2',
+    title: 'Modular Kitchen',
+    img: image9,
+  },
+  {
+    id: 'project-3',
+    title: 'Wardrobe Design',
+    img: image8,
   },
 ]

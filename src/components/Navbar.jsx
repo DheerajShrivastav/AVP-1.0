@@ -61,7 +61,7 @@ const Navbar = () => {
           </li>
         ))}
         <li className="font-poppins font-normal cursor-pointer text-[16px] text-black ml-auto mr-10 px-4 py-2  bg-white bg-opacity-30 rounded hover:bg-white">
-          <a href="/contactUs">CONTACT US</a>
+          <a href="/#contactUs">CONTACT US</a>
         </li>
       </ul>
 

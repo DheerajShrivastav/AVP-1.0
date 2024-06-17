@@ -63,7 +63,9 @@ const HomePage = () => {
 const App = () => (
   <Router>
     <div className=" w-full overflow-hidden z-50">
-      <div className={`${stlyes.paddingX} ${styles.flexCenter} fixed top-0 w-full `}>
+      <div
+        className={`${stlyes.paddingX} ${styles.flexCenter} fixed top-0 w-full `}
+      >
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>
@@ -84,7 +86,7 @@ const App = () => (
         <Route path="/realEstate" element={<RealEstate />} />
         <Route path="/PratikWakle" element={<PratikWakle />} />
 
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<HomePage />} />
       </Routes>
     </div>
   </Router>

@@ -6,7 +6,7 @@ const EngineeringWorksProjects = () => {
     <div>
       <section
         id="clients"
-        className={` ${styles.flexCenter} flex flex-col relative ss:pl-10  pl-5 ss:pb-20 pr-5`}
+        className={` ${styles.flexCenter} flex flex-col ss:pl-10  pl-5 ss:pb-20 pr-5`}
       >
         <div className="flex-1 font-poppins bg-black/50 m-0  w-full font-bold ss:text-[50px] text-[40px] text-black ss:leading-[80.8px] leading-[75px]  items-center text-center fixed top-36">
           <h1 className="text-white ">Engineering Works</h1>

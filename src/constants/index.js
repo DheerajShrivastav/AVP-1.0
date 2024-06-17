@@ -390,21 +390,5 @@ export const servicesSection = [
     img: image5,
   },
 ]
-export const ArchitectureWorkConstant = [
-  {
-    id: 'project-1',
-    title: 'Furniture Design',
-    img: image7,
-  },
-  {
-    id: 'project-2',
-    title: 'Modular Kitchen',
-    img: image9,
-  },
-  {
-    id: 'project-3',
-    title: 'Wardrobe Design',
-    img: image8,
-  },
-]
+
 

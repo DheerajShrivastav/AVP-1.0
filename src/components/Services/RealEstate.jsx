@@ -143,6 +143,6 @@ const RealEstate = () => {
         </div>
       </section>
     </div>
-  )
-}
-export default RealEstate
+  );
+};
+export default RealEstate;
